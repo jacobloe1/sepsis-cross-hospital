@@ -1,0 +1,116 @@
+{
+  "7": {
+    "A_test": {
+      "patients": 3051,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.010228199898011209,
+      "normalized_utility_delta_ci95": [
+        -0.01975349331447633,
+        -0.0018327461651958916
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.015928515928515928,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "B_transfer": {
+      "patients": 20000,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.0016773461691755769,
+      "normalized_utility_delta_ci95": [
+        -0.004037134713397493,
+        0.0004397333909378293
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.005194805194805195,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "pooled_random_test": {
+      "patients": 6052,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.005873662040457048,
+      "normalized_utility_delta_ci95": [
+        -0.011450334398850614,
+        -0.0009149265988435093
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.011469534050179211,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    }
+  },
+  "42": {
+    "A_test": {
+      "patients": 3051,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.008903311699117981,
+      "normalized_utility_delta_ci95": [
+        -0.021089441410014977,
+        0.0007074094833000368
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.01600312256049961,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "B_transfer": {
+      "patients": 20000,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.0006935033878039042,
+      "normalized_utility_delta_ci95": [
+        -0.0030902765273368342,
+        0.0012206418692413533
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.004823747680890538,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "pooled_random_test": {
+      "patients": 6052,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.008901420910045883,
+      "normalized_utility_delta_ci95": [
+        -0.016665794722384993,
+        -0.002194006970838695
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.01342925659472422,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    }
+  },
+  "2026": {
+    "A_test": {
+      "patients": 3051,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.0040493896094007656,
+      "normalized_utility_delta_ci95": [
+        -0.012414068644122334,
+        0.0029890663892152623
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.012048192771084338,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "B_transfer": {
+      "patients": 20000,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.0021706472085108925,
+      "normalized_utility_delta_ci95": [
+        -0.004894003062955412,
+        0.0002547100694394654
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.006493506493506494,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    },
+    "pooled_random_test": {
+      "patients": 6052,
+      "bootstrap_replicates": 1000,
+      "valid_replicates": 1000,
+      "normalized_utility_delta_gate_minus_unselective": -0.004035926837628129,
+      "normalized_utility_delta_ci95": [
+        -0.010108968906547743,
+        0.0014819381632568364
+      ],
+      "hourly_sensitivity_delta_gate_minus_unselective": -0.010216203373722975,
+      "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+    }
+  }
+}

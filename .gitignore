@@ -1,0 +1,20 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+
+# Download data separately. Never commit patient PSV files or dataset archives.
+data/**
+!data/.gitkeep
+*.psv
+*.zip
+*.partial
+backups/
+
+# Fresh local reproductions; the recorded baseline/follow-up remain tracked.
+results/reproduced_*/
+results/local_smoke/

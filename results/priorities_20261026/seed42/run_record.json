@@ -1,0 +1,25 @@
+{
+  "data_kind": "USER-SUPPLIED PSV: provenance requires review",
+  "python": "3.9.6 (default, Mar  6 2026, 16:22:43) \n[Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "config": {
+    "data": "/Users/jacobloe/python-stuff/cs-4824/sepsis_shift/data",
+    "out": "/Users/jacobloe/Documents/Codex/2026-10-23/new-chat-2/sepsis_shift/results/priorities_20261026/seed42",
+    "seed": 42,
+    "epochs": 15,
+    "max_train_hours": 50000,
+    "bootstrap": 1000,
+    "abstention": "recent-vitals",
+    "pooled": true,
+    "official_scorer": "/Users/jacobloe/Documents/Codex/2026-10-23/new-chat-2/sepsis_shift/vendor/official/evaluate_sepsis_score.py"
+  },
+  "code_sha256": {
+    "run.py": "35d197edc95910a50cdf78e12adadbbe241dd0a12ccc2448a436a1eb51503bde",
+    "summarize_revisions.py": "b7edfb2447e60d3b8d4d5c39b31b11ba91eb2a80709b4cbb5108a55ca08104d7",
+    "evaluation.py": "319a7b52c7f79168a95a0d1f5d44b8d4c0742eb5f8c86918e598a09c04a792c0",
+    "verify_saved.py": "a9be997e4e3506ea7086f0899a3d7284b2aa5a70b7b930654891637dec209fba",
+    "core.py": "eb03e61dd5dcc384b351c67c546d95d0cd93d5d6935ac0b38d45c44a0eeac485",
+    "download_data.py": "8bd50329fee0a8687d6cfaca728c2de0bb2e0446e7998812ec0e674365599a23",
+    "make_synthetic.py": "6270322df8f306c8596ba25988584cbdd55c62ed56f0f9f231542053651efbd6"
+  }
+}

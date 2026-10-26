@@ -1,0 +1,12 @@
+{
+  "patients": 20000,
+  "bootstrap_replicates": 1000,
+  "valid_replicates": 1000,
+  "normalized_utility_delta_gate_minus_unselective": -0.0021706472085108925,
+  "normalized_utility_delta_ci95": [
+    -0.004894003062955412,
+    0.0002547100694394654
+  ],
+  "hourly_sensitivity_delta_gate_minus_unselective": -0.006493506493506494,
+  "method": "paired whole-patient percentile bootstrap; NumPy default_rng; fixed model and rule; linear quantiles"
+}

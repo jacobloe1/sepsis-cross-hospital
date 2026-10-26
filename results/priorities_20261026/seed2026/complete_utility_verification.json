@@ -1,0 +1,37 @@
+{
+  "scorer_sha256": "26b8b26267ed32e8b7a7a27e45201cfc8c6640e717ba4cdc1f452b32f12b99e5",
+  "scorer_source": "physionetchallenges/evaluation-2019/evaluate_sepsis_score.py",
+  "numpy_version": "2.0.2",
+  "cohorts": {
+    "A_only/A_test": {
+      "patients": 3051,
+      "max_absolute_per_patient_error": 5.1514348342607263e-14,
+      "normalized_utilities": {
+        "sirs": 0.0794281871018505,
+        "logistic": 0.2733928072891564,
+        "logistic_abstain": 0.269343417679756
+      },
+      "status": "PASS: observed, best, and no-action utility verified; saved cohort normalization matched"
+    },
+    "A_only/B_transfer": {
+      "patients": 20000,
+      "max_absolute_per_patient_error": 4.618527782440651e-14,
+      "normalized_utilities": {
+        "sirs": -0.015900910568110247,
+        "logistic": 0.09474844406290087,
+        "logistic_abstain": 0.09257779685439195
+      },
+      "status": "PASS: observed, best, and no-action utility verified; saved cohort normalization matched"
+    },
+    "pooled/pooled_random_test": {
+      "patients": 6052,
+      "max_absolute_per_patient_error": 5.773159728050814e-14,
+      "normalized_utilities": {
+        "sirs": 0.04153865328887496,
+        "logistic": 0.22667793599850505,
+        "logistic_abstain": 0.22264200916087654
+      },
+      "status": "PASS: observed, best, and no-action utility verified; saved cohort normalization matched"
+    }
+  }
+}

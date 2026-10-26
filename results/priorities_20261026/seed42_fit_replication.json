@@ -1,0 +1,11 @@
+{
+  "status": "PASS: original seed42 A-only fit reproduced to floating-point precision",
+  "max_absolute_differences": {
+    "weights": 2.7755575615628914e-16,
+    "medians": 0.0,
+    "means": 0.0,
+    "scales": 0.0,
+    "calibration_weights": 4.440892098500626e-16,
+    "threshold": 1.3877787807814457e-17
+  }
+}

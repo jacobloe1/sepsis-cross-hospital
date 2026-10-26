@@ -1,0 +1,14 @@
+{
+  "run_record.json": "ce16201c44c242ee089815c796543f4d8b2a9de800ffce58b6fcced0442b6b9e",
+  "summary.md": "363bc4b26fe4eeab3d5d1afc4394cb7991014fc7b2a90dd9405e59a4b3803a7e",
+  "cohort_manifest.json": "c9589178d71534a5850f7cb891d275f9262c8c7ecf9f74014a3711245254ee8f",
+  "A_only/metrics.json": "1f62157a9b5c62a8935d92362eaa51f8d55c493188a8b5ef26c261a30950e02e",
+  "A_only/model.json": "4c54bf6902e1566f5a6e4e77f9b023fb2e5bb100190c40a9601d410eb1bdb6ae",
+  "A_only/B_transfer_predictions.csv": "2a1f65b1c0bfbfc01ef3e90fa973906cd9bfe37a42e8077ecf893f6bf8b3732b",
+  "A_only/A_test_predictions.csv": "6b5725dd5774674664aca9cd600dd65c5b2dba5d93f47f782949d412ddba2fcc",
+  "A_only/split_manifest.json": "f3ff80c61a6d2f24d668c1fae1be5800e3b7a0ce9d65b73d1cc31b068ef159ed",
+  "pooled/metrics.json": "632065785792256dd8c8406061df8431978fb1cd0f84e3cd7a3c5a5a544aa91e",
+  "pooled/model.json": "1deabb66eba80c3122b55f041e0777e62fcf65fba761c563fcee051dcd454a64",
+  "pooled/pooled_random_test_predictions.csv": "4017207bf0182a83177348e4727dec51c29467a07b2ef5600556338eb381aacf",
+  "pooled/split_manifest.json": "70d63757b5540583c91dc4fd37ff4b02893ea6829457273aac793dcb184a498a"
+}

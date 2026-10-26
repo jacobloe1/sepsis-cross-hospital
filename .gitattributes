@@ -1,0 +1,6 @@
+* text=auto
+# Preserve recorded hashes, CSV CRLF endings, and upstream source bytes.
+results/** -text
+vendor/official/** -text
+snapshots/original_baseline/** -text
+*.csv -text

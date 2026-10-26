@@ -1,0 +1,2094 @@
+{
+  "regime": "pooled",
+  "threshold": 0.015791193057063047,
+  "tuning": {
+    "target_fpr": 0.3018136252720438,
+    "achieved_fpr": 0.3018136252720438,
+    "negative_hours": 151630
+  },
+  "training_sample_hours": 50000,
+  "training_total_hours": 934664,
+  "missing95": 1.0,
+  "all_missing_training_features": [],
+  "evaluations": {
+    "pooled_random_test": {
+      "utility_verification": {
+        "status": "verified per-patient utility for every evaluated model and patient",
+        "scorer_sha256": "26b8b26267ed32e8b7a7a27e45201cfc8c6640e717ba4cdc1f452b32f12b99e5"
+      },
+      "models": {
+        "sirs": {
+          "patients": 6052,
+          "hours": 230871,
+          "septic_patients": 441,
+          "positive_hours": 4170,
+          "auroc": 0.6063894114768925,
+          "sensitivity_hour": 0.507673860911271,
+          "ppv": 0.030694504857184283,
+          "fpr_hour": 0.29489503795748584,
+          "alert_hours_per_100": 29.873825642891486,
+          "nonseptic_patients_alerted_fraction": 0.7299946533594724,
+          "early_case_sensitivity": 0.7891156462585034,
+          "median_warning_hours": 11.0,
+          "normalized_utility": 0.040632972379525616,
+          "abstention_fraction": 0.0,
+          "ece_10_bins": null,
+          "brier": null,
+          "calibration_bins": [],
+          "subgroups": {
+            "age:65plus": {
+              "patients": 2857,
+              "hours": 112382,
+              "septic_patients": 214,
+              "positive_hours": 2024,
+              "auroc": 0.6029243972563029,
+              "sensitivity_hour": 0.48122529644268774,
+              "ppv": 0.031054712409131487,
+              "fpr_hour": 0.2753765019300821,
+              "alert_hours_per_100": 27.908383904895803,
+              "nonseptic_patients_alerted_fraction": 0.7275822928490352,
+              "early_case_sensitivity": 0.7757009345794392,
+              "median_warning_hours": 9.0,
+              "normalized_utility": 0.039656889150058744,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "age:under65": {
+              "patients": 3195,
+              "hours": 118489,
+              "septic_patients": 227,
+              "positive_hours": 2146,
+              "auroc": 0.6096046691292408,
+              "sensitivity_hour": 0.532618825722274,
+              "ppv": 0.030394086050098388,
+              "fpr_hour": 0.3134094874637924,
+              "alert_hours_per_100": 31.73796723746508,
+              "nonseptic_patients_alerted_fraction": 0.7321428571428571,
+              "early_case_sensitivity": 0.801762114537445,
+              "median_warning_hours": 11.0,
+              "normalized_utility": 0.041548067211460676,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:at_or_above_training_median": {
+              "patients": 3069,
+              "hours": 123916,
+              "septic_patients": 317,
+              "positive_hours": 3016,
+              "auroc": 0.594436838652634,
+              "sensitivity_hour": 0.5377984084880637,
+              "ppv": 0.03702604606569726,
+              "fpr_hour": 0.3489247311827957,
+              "alert_hours_per_100": 35.352174053391,
+              "nonseptic_patients_alerted_fraction": 0.8248546511627907,
+              "early_case_sensitivity": 0.7917981072555205,
+              "median_warning_hours": 11,
+              "normalized_utility": 0.13105317473249778,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:below_training_median": {
+              "patients": 2983,
+              "hours": 106955,
+              "septic_patients": 124,
+              "positive_hours": 1154,
+              "auroc": 0.5978940557726363,
+              "sensitivity_hour": 0.4289428076256499,
+              "ppv": 0.019671740253546875,
+              "fpr_hour": 0.2331546960803773,
+              "alert_hours_per_100": 23.526716843532327,
+              "nonseptic_patients_alerted_fraction": 0.6386848548443512,
+              "early_case_sensitivity": 0.782258064516129,
+              "median_warning_hours": 10,
+              "normalized_utility": -0.2002546738438352,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:0": {
+              "patients": 2675,
+              "hours": 102605,
+              "septic_patients": 208,
+              "positive_hours": 1972,
+              "auroc": 0.6227355862743801,
+              "sensitivity_hour": 0.5491886409736308,
+              "ppv": 0.034221253199355386,
+              "fpr_hour": 0.3037174684248706,
+              "alert_hours_per_100": 30.8435261439501,
+              "nonseptic_patients_alerted_fraction": 0.7146331576813945,
+              "early_case_sensitivity": 0.8365384615384616,
+              "median_warning_hours": 11.0,
+              "normalized_utility": 0.09847675931796235,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:1": {
+              "patients": 3377,
+              "hours": 128266,
+              "septic_patients": 233,
+              "positive_hours": 2198,
+              "auroc": 0.5912875370089998,
+              "sensitivity_hour": 0.47042766151046406,
+              "ppv": 0.02770409666961391,
+              "fpr_hour": 0.2878525874924644,
+              "alert_hours_per_100": 29.098124210624796,
+              "nonseptic_patients_alerted_fraction": 0.7420483460559797,
+              "early_case_sensitivity": 0.7467811158798283,
+              "median_warning_hours": 9.5,
+              "normalized_utility": -0.011369260998032484,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:1": {
+              "patients": 1858,
+              "hours": 69588,
+              "septic_patients": 139,
+              "positive_hours": 1316,
+              "auroc": 0.6137023958519578,
+              "sensitivity_hour": 0.5288753799392097,
+              "ppv": 0.032709841150484066,
+              "fpr_hour": 0.3014705882352941,
+              "alert_hours_per_100": 30.57711099614876,
+              "nonseptic_patients_alerted_fraction": 0.731239092495637,
+              "early_case_sensitivity": 0.8129496402877698,
+              "median_warning_hours": 10,
+              "normalized_utility": 0.07629983325754222,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:2": {
+              "patients": 1880,
+              "hours": 71211,
+              "septic_patients": 105,
+              "positive_hours": 981,
+              "auroc": 0.6079976843233743,
+              "sensitivity_hour": 0.54638124362895,
+              "ppv": 0.022578878638527318,
+              "fpr_hour": 0.33038587498220134,
+              "alert_hours_per_100": 33.336141888191435,
+              "nonseptic_patients_alerted_fraction": 0.8129577464788732,
+              "early_case_sensitivity": 0.8380952380952381,
+              "median_warning_hours": 11.0,
+              "normalized_utility": -0.1417242184632819,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:unknown": {
+              "patients": 2314,
+              "hours": 90072,
+              "septic_patients": 197,
+              "positive_hours": 1873,
+              "auroc": 0.6054795443979952,
+              "sensitivity_hour": 0.47250400427122263,
+              "ppv": 0.03694735523733979,
+              "fpr_hour": 0.2615449154752321,
+              "alert_hours_per_100": 26.59316990851763,
+              "nonseptic_patients_alerted_fraction": 0.6594237128011337,
+              "early_case_sensitivity": 0.7461928934010152,
+              "median_warning_hours": 10,
+              "normalized_utility": 0.11168892628036618,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": null,
+              "brier": null,
+              "calibration_bins": [],
+              "adequate_for_sensitivity_gate": true
+            }
+          }
+        },
+        "logistic": {
+          "patients": 6052,
+          "hours": 230871,
+          "septic_patients": 441,
+          "positive_hours": 4170,
+          "auroc": 0.7442961147114439,
+          "sensitivity_hour": 0.6767386091127098,
+          "ppv": 0.039608129350999326,
+          "fpr_hour": 0.3018336928377025,
+          "alert_hours_per_100": 30.86052384231887,
+          "nonseptic_patients_alerted_fraction": 0.6654785243272144,
+          "early_case_sensitivity": 0.8843537414965986,
+          "median_warning_hours": 12.0,
+          "normalized_utility": 0.20711560789517378,
+          "abstention_fraction": 0.0,
+          "ece_10_bins": 0.0016318415686719838,
+          "brier": 0.017269677260344382,
+          "calibration_bins": [
+            {
+              "low": 0.0,
+              "high": 0.1,
+              "n": 227830,
+              "observed": 0.01631040688232454,
+              "predicted": 0.014983397397869287
+            },
+            {
+              "low": 0.1,
+              "high": 0.2,
+              "n": 2274,
+              "observed": 0.1310466138962181,
+              "predicted": 0.13512146477437356
+            },
+            {
+              "low": 0.2,
+              "high": 0.3,
+              "n": 517,
+              "observed": 0.19148936170212766,
+              "predicted": 0.23958238216468525
+            },
+            {
+              "low": 0.3,
+              "high": 0.4,
+              "n": 177,
+              "observed": 0.192090395480226,
+              "predicted": 0.34029914515707277
+            },
+            {
+              "low": 0.4,
+              "high": 0.5,
+              "n": 58,
+              "observed": 0.22413793103448276,
+              "predicted": 0.43748701008263713
+            },
+            {
+              "low": 0.5,
+              "high": 0.6,
+              "n": 13,
+              "observed": 0.6153846153846154,
+              "predicted": 0.538361852711561
+            },
+            {
+              "low": 0.6,
+              "high": 0.7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.6632348554914507
+            },
+            {
+              "low": 0.7,
+              "high": 0.8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "low": 0.8,
+              "high": 0.9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "low": 0.9,
+              "high": 1.0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "subgroups": {
+            "age:65plus": {
+              "patients": 2857,
+              "hours": 112382,
+              "septic_patients": 214,
+              "positive_hours": 2024,
+              "auroc": 0.748748364736341,
+              "sensitivity_hour": 0.7040513833992095,
+              "ppv": 0.038517677586766136,
+              "fpr_hour": 0.322323710107106,
+              "alert_hours_per_100": 32.919862611450235,
+              "nonseptic_patients_alerted_fraction": 0.6954218690881574,
+              "early_case_sensitivity": 0.8878504672897196,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.2013172714362682,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.0010312006991147842,
+              "brier": 0.01726792594178432,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 110578,
+                  "observed": 0.01596158367848939,
+                  "predicted": 0.015498489754740576
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1290,
+                  "observed": 0.13488372093023257,
+                  "predicted": 0.1358339797361001
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 330,
+                  "observed": 0.17272727272727273,
+                  "predicted": 0.24202359821139446
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 132,
+                  "observed": 0.13636363636363635,
+                  "predicted": 0.3400924377772815
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 42,
+                  "observed": 0.11904761904761904,
+                  "predicted": 0.43715590243981695
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 10,
+                  "observed": 0.5,
+                  "predicted": 0.5334026109218495
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "age:under65": {
+              "patients": 3195,
+              "hours": 118489,
+              "septic_patients": 227,
+              "positive_hours": 2146,
+              "auroc": 0.7412655831702575,
+              "sensitivity_hour": 0.6509785647716683,
+              "ppv": 0.04078593950718206,
+              "fpr_hour": 0.28239773772379945,
+              "alert_hours_per_100": 28.907324730565705,
+              "nonseptic_patients_alerted_fraction": 0.6388140161725068,
+              "early_case_sensitivity": 0.8810572687224669,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.21255164814985086,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.002234938761187506,
+              "brier": 0.01727133831480865,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 117252,
+                  "observed": 0.0166393750213216,
+                  "predicted": 0.014497624168942586
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 984,
+                  "observed": 0.12601626016260162,
+                  "predicted": 0.13418737503796382
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 187,
+                  "observed": 0.22459893048128343,
+                  "predicted": 0.23527435384696307
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 45,
+                  "observed": 0.35555555555555557,
+                  "predicted": 0.34090548680446053
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 16,
+                  "observed": 0.5,
+                  "predicted": 0.43835616764504004
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 3,
+                  "observed": 1.0,
+                  "predicted": 0.5548926586772661
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:at_or_above_training_median": {
+              "patients": 3069,
+              "hours": 123916,
+              "septic_patients": 317,
+              "positive_hours": 3016,
+              "auroc": 0.7370679261199711,
+              "sensitivity_hour": 0.7112068965517241,
+              "ppv": 0.04720614450141949,
+              "fpr_hour": 0.3580976013234078,
+              "alert_hours_per_100": 36.669195261306044,
+              "nonseptic_patients_alerted_fraction": 0.7427325581395349,
+              "early_case_sensitivity": 0.9053627760252366,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.3029732225300105,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.0055610210923867235,
+              "brier": 0.023057503808571984,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 121714,
+                  "observed": 0.02182164746865603,
+                  "predicted": 0.01658072804393974
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1650,
+                  "observed": 0.14424242424242426,
+                  "predicted": 0.1354736499160008
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 381,
+                  "observed": 0.2047244094488189,
+                  "predicted": 0.23938433167992237
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 113,
+                  "observed": 0.21238938053097345,
+                  "predicted": 0.33812212797598357
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 44,
+                  "observed": 0.25,
+                  "predicted": 0.434423935042221
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 12,
+                  "observed": 0.5833333333333334,
+                  "predicted": 0.5386390897112795
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:below_training_median": {
+              "patients": 2983,
+              "hours": 106955,
+              "septic_patients": 124,
+              "positive_hours": 1154,
+              "auroc": 0.7280854526655671,
+              "sensitivity_hour": 0.5866551126516465,
+              "ppv": 0.026231159672982292,
+              "fpr_hour": 0.23754028789898016,
+              "alert_hours_per_100": 24.13070917675658,
+              "nonseptic_patients_alerted_fraction": 0.5911157747464149,
+              "early_case_sensitivity": 0.8306451612903226,
+              "median_warning_hours": 12,
+              "normalized_utility": -0.04825779938646437,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.003624924056162217,
+              "brier": 0.010564013059978138,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 106116,
+                  "observed": 0.009989068566474425,
+                  "predicted": 0.013151274982250348
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 624,
+                  "observed": 0.09615384615384616,
+                  "predicted": 0.13419020598641695
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 136,
+                  "observed": 0.15441176470588236,
+                  "predicted": 0.24013721477273417
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 64,
+                  "observed": 0.15625,
+                  "predicted": 0.34414294111743343
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 14,
+                  "observed": 0.14285714285714285,
+                  "predicted": 0.4471138173525166
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.5350350087149393
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:0": {
+              "patients": 2675,
+              "hours": 102605,
+              "septic_patients": 208,
+              "positive_hours": 1972,
+              "auroc": 0.7397496867143356,
+              "sensitivity_hour": 0.6313387423935092,
+              "ppv": 0.04461086426831016,
+              "fpr_hour": 0.26495284846919004,
+              "alert_hours_per_100": 27.19945421763072,
+              "nonseptic_patients_alerted_fraction": 0.6108633968382651,
+              "early_case_sensitivity": 0.8461538461538461,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.24444926423971583,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.003870424387095692,
+              "brier": 0.018345719662628806,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 101472,
+                  "observed": 0.017315121412803534,
+                  "predicted": 0.013970606694786294
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 855,
+                  "observed": 0.17660818713450294,
+                  "predicted": 0.1346659995751002
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 169,
+                  "observed": 0.25443786982248523,
+                  "predicted": 0.24046157765498402
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 75,
+                  "observed": 0.22666666666666666,
+                  "predicted": 0.3361245123649334
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 28,
+                  "observed": 0.10714285714285714,
+                  "predicted": 0.43366351657026975
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 6,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.5293026900622596
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:1": {
+              "patients": 3377,
+              "hours": 128266,
+              "septic_patients": 233,
+              "positive_hours": 2198,
+              "auroc": 0.7526612928510958,
+              "sensitivity_hour": 0.7174704276615105,
+              "ppv": 0.03638670973696354,
+              "fpr_hour": 0.3312735983754799,
+              "alert_hours_per_100": 33.78915690829994,
+              "nonseptic_patients_alerted_fraction": 0.7083333333333334,
+              "early_case_sensitivity": 0.9184549356223176,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.17355221910576069,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.0010486084665403716,
+              "brier": 0.01640890877386789,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 126358,
+                  "observed": 0.015503569223950997,
+                  "predicted": 0.015796720639953188
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1419,
+                  "observed": 0.10359408033826638,
+                  "predicted": 0.13539589940818522
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 348,
+                  "observed": 0.16091954022988506,
+                  "predicted": 0.23915541653864933
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 102,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.3433687280924693
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 30,
+                  "observed": 0.3333333333333333,
+                  "predicted": 0.4410556040275134
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 7,
+                  "observed": 1.0,
+                  "predicted": 0.5461268492681051
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:1": {
+              "patients": 1858,
+              "hours": 69588,
+              "septic_patients": 139,
+              "positive_hours": 1316,
+              "auroc": 0.7077413181620025,
+              "sensitivity_hour": 0.6405775075987842,
+              "ppv": 0.03590442523105754,
+              "fpr_hour": 0.3315561284274666,
+              "alert_hours_per_100": 33.74001264585848,
+              "nonseptic_patients_alerted_fraction": 0.7172774869109948,
+              "early_case_sensitivity": 0.8920863309352518,
+              "median_warning_hours": 11.0,
+              "normalized_utility": 0.14472740134404669,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.001307733833014055,
+              "brier": 0.018159479410329502,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 68508,
+                  "observed": 0.016932329071057396,
+                  "predicted": 0.016073046377740322
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 808,
+                  "observed": 0.12747524752475248,
+                  "predicted": 0.13415283489788704
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 184,
+                  "observed": 0.17391304347826086,
+                  "predicted": 0.24077362054526258
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 67,
+                  "observed": 0.19402985074626866,
+                  "predicted": 0.3447538768191397
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 18,
+                  "observed": 0.2777777777777778,
+                  "predicted": 0.44759703808886886
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.5319808595352844
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.6542882732164672
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:2": {
+              "patients": 1880,
+              "hours": 71211,
+              "septic_patients": 105,
+              "positive_hours": 981,
+              "auroc": 0.7468421872330654,
+              "sensitivity_hour": 0.6085626911314985,
+              "ppv": 0.04079262043047489,
+              "fpr_hour": 0.19988608856613982,
+              "alert_hours_per_100": 20.5516001741304,
+              "nonseptic_patients_alerted_fraction": 0.5983098591549296,
+              "early_case_sensitivity": 0.7904761904761904,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.2019751109331725,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.001046428618355669,
+              "brier": 0.013105644851486315,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 70746,
+                  "observed": 0.012453000876374637,
+                  "predicted": 0.01186032875681006
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 367,
+                  "observed": 0.1989100817438692,
+                  "predicted": 0.13527382822206413
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 72,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.23355312152181687
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 15,
+                  "observed": 0.4666666666666667,
+                  "predicted": 0.33317637749831525
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 6,
+                  "observed": 0.5,
+                  "predicted": 0.44813980857930574
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 4,
+                  "observed": 1.0,
+                  "predicted": 0.5559043173365504
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.6721814377664341
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:unknown": {
+              "patients": 2314,
+              "hours": 90072,
+              "septic_patients": 197,
+              "positive_hours": 1873,
+              "auroc": 0.7559963612354136,
+              "sensitivity_hour": 0.7378537106246663,
+              "ppv": 0.04170942234562685,
+              "fpr_hour": 0.3600040816789306,
+              "alert_hours_per_100": 36.78612665423217,
+              "nonseptic_patients_alerted_fraction": 0.6797354747283892,
+              "early_case_sensitivity": 0.9289340101522843,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.25309881866302186,
+              "abstention_fraction": 0.0,
+              "ece_10_bins": 0.002953008434786983,
+              "brier": 0.019874319766939402,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 88576,
+                  "observed": 0.01891031430635838,
+                  "predicted": 0.016635029236825336
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1099,
+                  "observed": 0.11101000909918107,
+                  "predicted": 0.13578273461504572
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 261,
+                  "observed": 0.210727969348659,
+                  "predicted": 0.24040582624231085
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 95,
+                  "observed": 0.14736842105263157,
+                  "predicted": 0.3382820345625767
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 34,
+                  "observed": 0.14705882352941177,
+                  "predicted": 0.43025473669757297
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 7,
+                  "observed": 0.2857142857142857,
+                  "predicted": 0.5301607281190747
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "adequate_for_sensitivity_gate": true
+            }
+          },
+          "bootstrap": {
+            "replicates": 1000,
+            "valid_utility_replicates": 1000,
+            "utility_delta_vs_sirs_ci95": [
+              0.12635726079351658,
+              0.20607581355507712
+            ],
+            "sensitivity_delta_vs_sirs_ci95": [
+              0.12971877375221688,
+              0.20904761904761904
+            ],
+            "method": "paired patient percentile bootstrap; fixed model"
+          }
+        },
+        "logistic_abstain": {
+          "patients": 6052,
+          "hours": 230871,
+          "septic_patients": 441,
+          "positive_hours": 4170,
+          "auroc": 0.7442961147114439,
+          "sensitivity_hour": 0.6633093525179856,
+          "ppv": 0.0391629382114742,
+          "fpr_hour": 0.2993458343809688,
+          "alert_hours_per_100": 30.591975605424675,
+          "nonseptic_patients_alerted_fraction": 0.6644091962217074,
+          "early_case_sensitivity": 0.8775510204081632,
+          "median_warning_hours": 12,
+          "normalized_utility": 0.19821418698512727,
+          "abstention_fraction": 0.033048758830689,
+          "ece_10_bins": 0.0016318415686719838,
+          "brier": 0.017269677260344382,
+          "calibration_bins": [
+            {
+              "low": 0.0,
+              "high": 0.1,
+              "n": 227830,
+              "observed": 0.01631040688232454,
+              "predicted": 0.014983397397869287
+            },
+            {
+              "low": 0.1,
+              "high": 0.2,
+              "n": 2274,
+              "observed": 0.1310466138962181,
+              "predicted": 0.13512146477437356
+            },
+            {
+              "low": 0.2,
+              "high": 0.3,
+              "n": 517,
+              "observed": 0.19148936170212766,
+              "predicted": 0.23958238216468525
+            },
+            {
+              "low": 0.3,
+              "high": 0.4,
+              "n": 177,
+              "observed": 0.192090395480226,
+              "predicted": 0.34029914515707277
+            },
+            {
+              "low": 0.4,
+              "high": 0.5,
+              "n": 58,
+              "observed": 0.22413793103448276,
+              "predicted": 0.43748701008263713
+            },
+            {
+              "low": 0.5,
+              "high": 0.6,
+              "n": 13,
+              "observed": 0.6153846153846154,
+              "predicted": 0.538361852711561
+            },
+            {
+              "low": 0.6,
+              "high": 0.7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.6632348554914507
+            },
+            {
+              "low": 0.7,
+              "high": 0.8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "low": 0.8,
+              "high": 0.9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "low": 0.9,
+              "high": 1.0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "covered_ece_10_bins": 0.0014413858379171652,
+          "subgroups": {
+            "age:65plus": {
+              "patients": 2857,
+              "hours": 112382,
+              "septic_patients": 214,
+              "positive_hours": 2024,
+              "auroc": 0.748748364736341,
+              "sensitivity_hour": 0.6907114624505929,
+              "ppv": 0.03808019176291131,
+              "fpr_hour": 0.3199949256057558,
+              "alert_hours_per_100": 32.66715310281006,
+              "nonseptic_patients_alerted_fraction": 0.6954218690881574,
+              "early_case_sensitivity": 0.8785046728971962,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.19197884530630396,
+              "abstention_fraction": 0.0308145432542578,
+              "ece_10_bins": 0.0010312006991147842,
+              "brier": 0.01726792594178432,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 110578,
+                  "observed": 0.01596158367848939,
+                  "predicted": 0.015498489754740576
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1290,
+                  "observed": 0.13488372093023257,
+                  "predicted": 0.1358339797361001
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 330,
+                  "observed": 0.17272727272727273,
+                  "predicted": 0.24202359821139446
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 132,
+                  "observed": 0.13636363636363635,
+                  "predicted": 0.3400924377772815
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 42,
+                  "observed": 0.11904761904761904,
+                  "predicted": 0.43715590243981695
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 10,
+                  "observed": 0.5,
+                  "predicted": 0.5334026109218495
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0008967321110940744,
+              "adequate_for_sensitivity_gate": true
+            },
+            "age:under65": {
+              "patients": 3195,
+              "hours": 118489,
+              "septic_patients": 227,
+              "positive_hours": 2146,
+              "auroc": 0.7412655831702575,
+              "sensitivity_hour": 0.6374650512581547,
+              "ppv": 0.0403349451586272,
+              "fpr_hour": 0.27975898850811826,
+              "alert_hours_per_100": 28.62375410375647,
+              "nonseptic_patients_alerted_fraction": 0.6367924528301887,
+              "early_case_sensitivity": 0.8766519823788547,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.20405992715698176,
+              "abstention_fraction": 0.03516782148553874,
+              "ece_10_bins": 0.002234938761187506,
+              "brier": 0.01727133831480865,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 117252,
+                  "observed": 0.0166393750213216,
+                  "predicted": 0.014497624168942586
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 984,
+                  "observed": 0.12601626016260162,
+                  "predicted": 0.13418737503796382
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 187,
+                  "observed": 0.22459893048128343,
+                  "predicted": 0.23527435384696307
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 45,
+                  "observed": 0.35555555555555557,
+                  "predicted": 0.34090548680446053
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 16,
+                  "observed": 0.5,
+                  "predicted": 0.43835616764504004
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 3,
+                  "observed": 1.0,
+                  "predicted": 0.5548926586772661
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.002003270265846151,
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:at_or_above_training_median": {
+              "patients": 3069,
+              "hours": 123916,
+              "septic_patients": 317,
+              "positive_hours": 3016,
+              "auroc": 0.7370679261199711,
+              "sensitivity_hour": 0.7009283819628647,
+              "ppv": 0.046735790241637744,
+              "fpr_hour": 0.35665012406947894,
+              "alert_hours_per_100": 36.50295361373834,
+              "nonseptic_patients_alerted_fraction": 0.7420058139534884,
+              "early_case_sensitivity": 0.9022082018927445,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.295414697735051,
+              "abstention_fraction": 0.0218938635850092,
+              "ece_10_bins": 0.0055610210923867235,
+              "brier": 0.023057503808571984,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 121714,
+                  "observed": 0.02182164746865603,
+                  "predicted": 0.01658072804393974
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1650,
+                  "observed": 0.14424242424242426,
+                  "predicted": 0.1354736499160008
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 381,
+                  "observed": 0.2047244094488189,
+                  "predicted": 0.23938433167992237
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 113,
+                  "observed": 0.21238938053097345,
+                  "predicted": 0.33812212797598357
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 44,
+                  "observed": 0.25,
+                  "predicted": 0.434423935042221
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 12,
+                  "observed": 0.5833333333333334,
+                  "predicted": 0.5386390897112795
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.005290756001077984,
+              "adequate_for_sensitivity_gate": true
+            },
+            "completeness:below_training_median": {
+              "patients": 2983,
+              "hours": 106955,
+              "septic_patients": 124,
+              "positive_hours": 1154,
+              "auroc": 0.7280854526655671,
+              "sensitivity_hour": 0.5649913344887348,
+              "ppv": 0.025674345343571568,
+              "fpr_hour": 0.23386357406829802,
+              "alert_hours_per_100": 23.74363049880791,
+              "nonseptic_patients_alerted_fraction": 0.5897166841552991,
+              "early_case_sensitivity": 0.8145161290322581,
+              "median_warning_hours": 11,
+              "normalized_utility": -0.060736817734556484,
+              "abstention_fraction": 0.04597260530129494,
+              "ece_10_bins": 0.003624924056162217,
+              "brier": 0.010564013059978138,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 106116,
+                  "observed": 0.009989068566474425,
+                  "predicted": 0.013151274982250348
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 624,
+                  "observed": 0.09615384615384616,
+                  "predicted": 0.13419020598641695
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 136,
+                  "observed": 0.15441176470588236,
+                  "predicted": 0.24013721477273417
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 64,
+                  "observed": 0.15625,
+                  "predicted": 0.34414294111743343
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 14,
+                  "observed": 0.14285714285714285,
+                  "predicted": 0.4471138173525166
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.5350350087149393
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.003946184561939733,
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:0": {
+              "patients": 2675,
+              "hours": 102605,
+              "septic_patients": 208,
+              "positive_hours": 1972,
+              "auroc": 0.7397496867143356,
+              "sensitivity_hour": 0.6252535496957403,
+              "ppv": 0.044506208489748775,
+              "fpr_hour": 0.2630449256208202,
+              "alert_hours_per_100": 27.000633497392915,
+              "nonseptic_patients_alerted_fraction": 0.6100526955816782,
+              "early_case_sensitivity": 0.8461538461538461,
+              "median_warning_hours": 12.0,
+              "normalized_utility": 0.24241382762187738,
+              "abstention_fraction": 0.03314653282003801,
+              "ece_10_bins": 0.003870424387095692,
+              "brier": 0.018345719662628806,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 101472,
+                  "observed": 0.017315121412803534,
+                  "predicted": 0.013970606694786294
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 855,
+                  "observed": 0.17660818713450294,
+                  "predicted": 0.1346659995751002
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 169,
+                  "observed": 0.25443786982248523,
+                  "predicted": 0.24046157765498402
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 75,
+                  "observed": 0.22666666666666666,
+                  "predicted": 0.3361245123649334
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 28,
+                  "observed": 0.10714285714285714,
+                  "predicted": 0.43366351657026975
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 6,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.5293026900622596
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0037258917415936136,
+              "adequate_for_sensitivity_gate": true
+            },
+            "sex:1": {
+              "patients": 3377,
+              "hours": 128266,
+              "septic_patients": 233,
+              "positive_hours": 2198,
+              "auroc": 0.7526612928510958,
+              "sensitivity_hour": 0.697452229299363,
+              "ppv": 0.03571428571428571,
+              "fpr_hour": 0.32832280991211094,
+              "alert_hours_per_100": 33.46483089828949,
+              "nonseptic_patients_alerted_fraction": 0.7070610687022901,
+              "early_case_sensitivity": 0.9055793991416309,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.1584781989170728,
+              "abstention_fraction": 0.03297054558495626,
+              "ece_10_bins": 0.0010486084665403716,
+              "brier": 0.01640890877386789,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 126358,
+                  "observed": 0.015503569223950997,
+                  "predicted": 0.015796720639953188
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1419,
+                  "observed": 0.10359408033826638,
+                  "predicted": 0.13539589940818522
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 348,
+                  "observed": 0.16091954022988506,
+                  "predicted": 0.23915541653864933
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 102,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.3433687280924693
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 30,
+                  "observed": 0.3333333333333333,
+                  "predicted": 0.4410556040275134
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 7,
+                  "observed": 1.0,
+                  "predicted": 0.5461268492681051
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.6632348554914507
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0013986242738381453,
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:1": {
+              "patients": 1858,
+              "hours": 69588,
+              "septic_patients": 139,
+              "positive_hours": 1316,
+              "auroc": 0.7077413181620025,
+              "sensitivity_hour": 0.6306990881458967,
+              "ppv": 0.03572197116419195,
+              "fpr_hour": 0.32817260370283574,
+              "alert_hours_per_100": 33.389377478875666,
+              "nonseptic_patients_alerted_fraction": 0.7155322862129145,
+              "early_case_sensitivity": 0.8848920863309353,
+              "median_warning_hours": 11,
+              "normalized_utility": 0.1381612854327739,
+              "abstention_fraction": 0.03740587457607634,
+              "ece_10_bins": 0.001307733833014055,
+              "brier": 0.018159479410329502,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 68508,
+                  "observed": 0.016932329071057396,
+                  "predicted": 0.016073046377740322
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 808,
+                  "observed": 0.12747524752475248,
+                  "predicted": 0.13415283489788704
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 184,
+                  "observed": 0.17391304347826086,
+                  "predicted": 0.24077362054526258
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 67,
+                  "observed": 0.19402985074626866,
+                  "predicted": 0.3447538768191397
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 18,
+                  "observed": 0.2777777777777778,
+                  "predicted": 0.44759703808886886
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 2,
+                  "observed": 1.0,
+                  "predicted": 0.5319808595352844
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.6542882732164672
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0011612378584342302,
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:2": {
+              "patients": 1880,
+              "hours": 71211,
+              "septic_patients": 105,
+              "positive_hours": 981,
+              "auroc": 0.7468421872330654,
+              "sensitivity_hour": 0.5922528032619776,
+              "ppv": 0.03985457538757031,
+              "fpr_hour": 0.19930229246760645,
+              "alert_hours_per_100": 20.471556360674615,
+              "nonseptic_patients_alerted_fraction": 0.5977464788732394,
+              "early_case_sensitivity": 0.7904761904761904,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.18919360758015494,
+              "abstention_fraction": 0.023325048096501946,
+              "ece_10_bins": 0.001046428618355669,
+              "brier": 0.013105644851486315,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 70746,
+                  "observed": 0.012453000876374637,
+                  "predicted": 0.01186032875681006
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 367,
+                  "observed": 0.1989100817438692,
+                  "predicted": 0.13527382822206413
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 72,
+                  "observed": 0.16666666666666666,
+                  "predicted": 0.23355312152181687
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 15,
+                  "observed": 0.4666666666666667,
+                  "predicted": 0.33317637749831525
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 6,
+                  "observed": 0.5,
+                  "predicted": 0.44813980857930574
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 4,
+                  "observed": 1.0,
+                  "predicted": 0.5559043173365504
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 1,
+                  "observed": 1.0,
+                  "predicted": 0.6721814377664341
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0005313687949365152,
+              "adequate_for_sensitivity_gate": true
+            },
+            "unit:unknown": {
+              "patients": 2314,
+              "hours": 90072,
+              "septic_patients": 197,
+              "positive_hours": 1873,
+              "auroc": 0.7559963612354136,
+              "sensitivity_hour": 0.7234383342231714,
+              "ppv": 0.04129209203108335,
+              "fpr_hour": 0.3566933865463327,
+              "alert_hours_per_100": 36.43196553868017,
+              "nonseptic_patients_alerted_fraction": 0.6787907416154936,
+              "early_case_sensitivity": 0.9187817258883249,
+              "median_warning_hours": 12,
+              "normalized_utility": 0.24461562730045297,
+              "abstention_fraction": 0.03737010391686651,
+              "ece_10_bins": 0.002953008434786983,
+              "brier": 0.019874319766939402,
+              "calibration_bins": [
+                {
+                  "low": 0.0,
+                  "high": 0.1,
+                  "n": 88576,
+                  "observed": 0.01891031430635838,
+                  "predicted": 0.016635029236825336
+                },
+                {
+                  "low": 0.1,
+                  "high": 0.2,
+                  "n": 1099,
+                  "observed": 0.11101000909918107,
+                  "predicted": 0.13578273461504572
+                },
+                {
+                  "low": 0.2,
+                  "high": 0.3,
+                  "n": 261,
+                  "observed": 0.210727969348659,
+                  "predicted": 0.24040582624231085
+                },
+                {
+                  "low": 0.3,
+                  "high": 0.4,
+                  "n": 95,
+                  "observed": 0.14736842105263157,
+                  "predicted": 0.3382820345625767
+                },
+                {
+                  "low": 0.4,
+                  "high": 0.5,
+                  "n": 34,
+                  "observed": 0.14705882352941177,
+                  "predicted": 0.43025473669757297
+                },
+                {
+                  "low": 0.5,
+                  "high": 0.6,
+                  "n": 7,
+                  "observed": 0.2857142857142857,
+                  "predicted": 0.5301607281190747
+                },
+                {
+                  "low": 0.6,
+                  "high": 0.7,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.7,
+                  "high": 0.8,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.8,
+                  "high": 0.9,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                },
+                {
+                  "low": 0.9,
+                  "high": 1.0,
+                  "n": 0,
+                  "observed": null,
+                  "predicted": null
+                }
+              ],
+              "covered_ece_10_bins": 0.0030367362894607275,
+              "adequate_for_sensitivity_gate": true
+            }
+          },
+          "bootstrap": {
+            "replicates": 1000,
+            "valid_utility_replicates": 1000,
+            "utility_delta_vs_sirs_ci95": [
+              0.11937534047576231,
+              0.1963458311236435
+            ],
+            "sensitivity_delta_vs_sirs_ci95": [
+              0.11719500480307397,
+              0.19677734375
+            ],
+            "method": "paired patient percentile bootstrap; fixed model"
+          }
+        }
+      }
+    }
+  },
+  "abstention_policy": "recent-vitals",
+  "recent_vitals95": 0.2857142857142857,
+  "recent_vitals_histogram": [
+    629348,
+    228215,
+    46559,
+    4916,
+    846,
+    356,
+    226,
+    24198
+  ]
+}

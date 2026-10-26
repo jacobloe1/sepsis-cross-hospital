@@ -1,0 +1,23 @@
+{
+  "data_kind": "USER-SUPPLIED PSV: provenance requires review",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "config": {
+    "data": "data",
+    "out": "results/real_seed42",
+    "seed": 42,
+    "epochs": 15,
+    "max_train_hours": 50000,
+    "bootstrap": 1000,
+    "abstention": "rate",
+    "pooled": true,
+    "official_scorer": null
+  },
+  "code_sha256": {
+    "run.py": "9a24389c23a2c45f6c064d1b45eb89d1b09cec7e11f8d702b48523698f1936ab",
+    "evaluation.py": "319a7b52c7f79168a95a0d1f5d44b8d4c0742eb5f8c86918e598a09c04a792c0",
+    "core.py": "a712efa28d4d3fa03d7bb67b98acd7ea5246f98e5b2209d1da229e38c899679f",
+    "download_data.py": "8bd50329fee0a8687d6cfaca728c2de0bb2e0446e7998812ec0e674365599a23",
+    "make_synthetic.py": "6270322df8f306c8596ba25988584cbdd55c62ed56f0f9f231542053651efbd6"
+  }
+}

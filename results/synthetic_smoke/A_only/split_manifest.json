@@ -1,0 +1,570 @@
+{
+  "train": [
+    {
+      "id": "A:p000051",
+      "hospital": "A",
+      "sha256": "ee5cb8e45b51e2300355f13a8f62cf64a9820a87f6f70adb2bc07be6c0d0accb",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000031",
+      "hospital": "A",
+      "sha256": "f0f99bc2d27819c8784761dbe22e8dd9653369b38e6afb13290debe5c5a6d8a8",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000073",
+      "hospital": "A",
+      "sha256": "98e18d1c073fe1230787257409b13720f75977759872e31af09496eba71b2cc4",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000015",
+      "hospital": "A",
+      "sha256": "b25c0173614ff1ca76ef541e35231273a15f6359bd23945c6c69d668ebedf078",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000022",
+      "hospital": "A",
+      "sha256": "ab99a7c10bc97cef1465817920ce79f244817c0142185c4353272dbaf9d01648",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000027",
+      "hospital": "A",
+      "sha256": "dd30cbf66c48bc9b5637c68a3d59161b32936aaf1a6f141e9d5b89ea21645f90",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000074",
+      "hospital": "A",
+      "sha256": "d306e763ba4808ca3297ea0ce27b1183ccd1520461997a28ef1f01e8969e9c70",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000078",
+      "hospital": "A",
+      "sha256": "439a6a65e1c361b146f31fadec431d81c1546e945e1503762881fbb57ba03500",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000045",
+      "hospital": "A",
+      "sha256": "6ce1b8a4ef5273b19e2e195b2411482077b1ba5d3c2abfa454ebf3e7b05c48c7",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000026",
+      "hospital": "A",
+      "sha256": "af646a76658979022cf780594ef5d1fb9960d526b14d5333826193a6794bf8cb",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000013",
+      "hospital": "A",
+      "sha256": "dd6e4b28511ea87cb759f8b586bb9d49f1349466af96effa41ca079d0464cf47",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000049",
+      "hospital": "A",
+      "sha256": "2cf41e7b3c54c3e4b4897eedd7a4fbd7ed1ce5bc5d9d8caacabf2fa837631649",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000042",
+      "hospital": "A",
+      "sha256": "24e8c67241c1411602d642009501c97168bc2b63eb1b067358a58a156d64e82f",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000061",
+      "hospital": "A",
+      "sha256": "00f6b9f03e21ba4b03873cd1d6c12a51d1de32cb5ec477f6048a3f0f4eef8dd5",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000041",
+      "hospital": "A",
+      "sha256": "b2e055fc804fe84a6eac9ca8e63429156940447930f68da63391ad413047fcae",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000066",
+      "hospital": "A",
+      "sha256": "8513ad71c402c90185e6cf5e24908e75c49500057bbe6debc98630fb1068b305",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000005",
+      "hospital": "A",
+      "sha256": "76c6a01f8c485fdf6a0d772c207ae4dbec54e95d4d387251fa82a791f95181e5",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000029",
+      "hospital": "A",
+      "sha256": "e4784f0e47404808be6df80db1372ac5e6efa42cb280741940d58421ebb24d09",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000067",
+      "hospital": "A",
+      "sha256": "1cd10a7542b9559abbebafd1cef395e8cfc6e137bf6f9a1ef6358c0eac8606a5",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000006",
+      "hospital": "A",
+      "sha256": "464b7d7322e03c37e030c737b0d151ba0d95023784e9058d78cf7b81721b0c50",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000039",
+      "hospital": "A",
+      "sha256": "04e04256f4ae31d0553d209e7dd7d33613c4c370d1e992571877c050f82734d1",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000014",
+      "hospital": "A",
+      "sha256": "0269074c0db4d65d8b4dc47e409f64f6046c166385e605c1ee795e0fdb6e7878",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000079",
+      "hospital": "A",
+      "sha256": "5dbb8ab8445d79112063a5f86c54014e0923b744744774cc84ca32d6723ba293",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000030",
+      "hospital": "A",
+      "sha256": "b3a9d258b63ca4c284b12f6807a0a89b6f0d12d8ce787d3b958f3aebc9d27f9c",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000055",
+      "hospital": "A",
+      "sha256": "07497d7a946a8c6bf222656d416ddd6259c4744bac97cb7b09e9c0697e883f53",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000033",
+      "hospital": "A",
+      "sha256": "bae63e170e8cbc8a7e518f46c432acebebb4334dc89f84efc54904a2579037c1",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000001",
+      "hospital": "A",
+      "sha256": "40c271c2767d0a86db44e167d984831812df83aa7dc710e3160f3d40e6178c99",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000059",
+      "hospital": "A",
+      "sha256": "8ab13392d219391827036f4ac971aa8c5b94316a9b7c3a2d608af2be1b5c8040",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000034",
+      "hospital": "A",
+      "sha256": "e70953a61e707ab60df35c46bc73a9c82585a1200255077cd726efdd83266e1f",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000070",
+      "hospital": "A",
+      "sha256": "5d14fac4b204dec2c9d83addad940f6432e166828ce8b75c23882f14f3846bec",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000025",
+      "hospital": "A",
+      "sha256": "537fcedd58731ffaf7f0dd31f632f776fe2e6d5a1f61f8e3a452aff71e4f09fe",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000038",
+      "hospital": "A",
+      "sha256": "3a5783d24b557c12fb88a105a1fa79a725cac405d173a809ee46a76ceed97e2e",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000053",
+      "hospital": "A",
+      "sha256": "ea4012a9332d55490fca5262d07dd5367228c3d2d2863989f9409b8a678942cd",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000035",
+      "hospital": "A",
+      "sha256": "aab9cf1b97a638d6803a97cb746e51d8652758517fd751c5792168b9685cfeb1",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000065",
+      "hospital": "A",
+      "sha256": "6bb614a1db5c30156b61c8ec44fc16f1928b5481c7c37cab02ed2463cb5627d3",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000017",
+      "hospital": "A",
+      "sha256": "15f49788a55a3d8fea6990bc3be16df6e8d4800b6fddf6cab55ebb185944acdc",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000000",
+      "hospital": "A",
+      "sha256": "a9dac7fe32f9ecba9e956002d07b2e8430ba0e4c085a9d6ed9b8a24565d6d116",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000072",
+      "hospital": "A",
+      "sha256": "29015d5a505795131039e7d87d9ea7c28edb08361eebd41010f8a1a3a5d7b3ca",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000020",
+      "hospital": "A",
+      "sha256": "69dd958500b9f48bc6fc60a361211fa7aeaef1e4ccfdbe2e50406cdd9db5224f",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000032",
+      "hospital": "A",
+      "sha256": "6b3d679883e1fe146840a1fc86bf0f625e6cd7334c295fc1a2a49eff39f587fa",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000028",
+      "hospital": "A",
+      "sha256": "c9ac527470354ecd683200478984f43cf369dccd2fb43958c63a0f61312476a3",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000036",
+      "hospital": "A",
+      "sha256": "538f93567c1a0882bf44d47dba96c77361235e5a2a077c13e66b02548eab91e0",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000064",
+      "hospital": "A",
+      "sha256": "a15af497f0cf0c9f83e277dfb9fc912c11d0eb68f39a821c3e307c7009b5478f",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000068",
+      "hospital": "A",
+      "sha256": "93014e5b498c76efb29fb2757fd2be5b4a6cd563e862edf34195fe6008453a43",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000056",
+      "hospital": "A",
+      "sha256": "0be3c988dd56c57b62472e839fdab421a276821273e0025d543d0dc518999853",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000052",
+      "hospital": "A",
+      "sha256": "ecf4ef9f6af7ecd7cdea978cd1f1e361e2896fd3488a14a51fb60e49d6f789dc",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000060",
+      "hospital": "A",
+      "sha256": "7ed6628ab15b6d551f2e33df87038d8e144a335727e9d1a5050b0b0b1361b674",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000016",
+      "hospital": "A",
+      "sha256": "52bd9bd751bd64e433f96805b4df4019750cfae68bc2d001a5218ea1c3245ffa",
+      "hours": 36,
+      "septic": true
+    }
+  ],
+  "calibration": [
+    {
+      "id": "A:p000047",
+      "hospital": "A",
+      "sha256": "6906964f16c47ee5969fd9eaa5cc3a15b90ff6671b5dd0804ee07b3df190d30b",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000057",
+      "hospital": "A",
+      "sha256": "306a5c3f1f6208eff14a4ca7cc1a516a3ebf88db51c6e7900d668dd416816358",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000043",
+      "hospital": "A",
+      "sha256": "e0fda7b2dd138a574527b7ef0e98c1a8c737df72c2aec6f10aabbaf6491659f9",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000071",
+      "hospital": "A",
+      "sha256": "f3d05ddbc7fe309ebc7d345884e4d9af40b4c58d5bf53291c2118a8303a78936",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000018",
+      "hospital": "A",
+      "sha256": "27e1ffcb380974472aa9d0152b97ea47a384239272007137171f27caa91de05c",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000062",
+      "hospital": "A",
+      "sha256": "2e56c95a7ed5d1fbad3f8f97ae22a0d275131e5f8044a9350648d8b841ca38e5",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000077",
+      "hospital": "A",
+      "sha256": "2f880ae84b5ed145b8ee4a96867f83007d937341498b1ad9fb19f2f9c92b0eea",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000003",
+      "hospital": "A",
+      "sha256": "de73136d4767b18b4b4c29fbc7b1aa5b68ea40c52097166d9c7af0759f345f2c",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000037",
+      "hospital": "A",
+      "sha256": "6913fc29510a6034d13e94b27fe72a72b8c7f5258dfb803736a690a7e78dd73e",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000048",
+      "hospital": "A",
+      "sha256": "7443a14a5e4e6eae702758098a219f76ff879b242caad10bd373b6fd94d9facf",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000012",
+      "hospital": "A",
+      "sha256": "1c58feec5e2e3215baae2ed3e901d102c61088fcfdb447de462598decb2a4b3d",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000040",
+      "hospital": "A",
+      "sha256": "f41f1dfff569d7ecb4079b6560202f6244742a3570809ae728a6a56c4fbce2f3",
+      "hours": 36,
+      "septic": true
+    }
+  ],
+  "tune": [
+    {
+      "id": "A:p000050",
+      "hospital": "A",
+      "sha256": "136aa68e0ae8fe98fdc0ac713dc0f38dcb38c1b87cff991b1d90e4847cdabcf6",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000007",
+      "hospital": "A",
+      "sha256": "9b37ff71f914355b9d7a51279d77e5dfdfff9f23fc5572700cd3f2aa505680d7",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000046",
+      "hospital": "A",
+      "sha256": "d986471b4253f7adf30669ae5b3c1493b83cbabf37fb043432bd1cadc22d4255",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000069",
+      "hospital": "A",
+      "sha256": "56a05f3de23c34f67ddd82198cfd506cb8c0ed2340625c8e7e92337b8b24f6a0",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000058",
+      "hospital": "A",
+      "sha256": "ba0615f9e45f6b12db9d0472e2ed20ddf5ff07b200cc84d3d79750e56dbb351d",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000009",
+      "hospital": "A",
+      "sha256": "06580e34b401d4bc58404d4bee7ab4dd7cac7b8be42333faaff8ad9a57b99322",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000004",
+      "hospital": "A",
+      "sha256": "1e054aed54b46287ca34f2b61d385382b8a629b7740b3669562105958340b204",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000008",
+      "hospital": "A",
+      "sha256": "792e9fa8350e90e69914f42e9f907cf2c3667026baac5bb12c973c27a9db95a8",
+      "hours": 36,
+      "septic": true
+    }
+  ],
+  "test": [
+    {
+      "id": "A:p000075",
+      "hospital": "A",
+      "sha256": "5e4b77605d56a447ae8b6a8fbffc7dcbacd106c75080ac5216aea77251b9049d",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000011",
+      "hospital": "A",
+      "sha256": "046881722ad04fb741b397b404a92b24021b9563ade357e1753ebf2c419fb53a",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000019",
+      "hospital": "A",
+      "sha256": "ddc5924bbd5416ea06b4f7043d3dfad199c7333d02c95d63eae76254227634b4",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000021",
+      "hospital": "A",
+      "sha256": "72ae50d4633206aaaa09dd261d1dac383d26a9129a2bd836e6027a20adff5dbb",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000023",
+      "hospital": "A",
+      "sha256": "cf9a8a8485d60b0521b09481d4c20b3041f835b576b62ec746ae23212d66c6e8",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000063",
+      "hospital": "A",
+      "sha256": "c07e6c0dde836ee608650a034839e5972126a65ec669eeabd17f361d2927f381",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000002",
+      "hospital": "A",
+      "sha256": "a178c1be56b89c2c1effe1092b096b467fe75aa8078e74171494ecf9f6c64899",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000010",
+      "hospital": "A",
+      "sha256": "d8ea25853c6e859e624e4e7c5198ac11680a97046836081022396c2eaa379f24",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000054",
+      "hospital": "A",
+      "sha256": "55376432096c43b0f9957fcabdaaf4e9002dabbe6157e098a0cb3bbd6ac514b1",
+      "hours": 36,
+      "septic": false
+    },
+    {
+      "id": "A:p000024",
+      "hospital": "A",
+      "sha256": "23d5a0b74e148f5417503a139b3b02eb22e16d2475a43f70ff906ef81be61e7e",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000044",
+      "hospital": "A",
+      "sha256": "33b8adf04025585fd3cb24fb3a9194a1cd7856eb5c7ec7edabbaf2fe6e39d012",
+      "hours": 36,
+      "septic": true
+    },
+    {
+      "id": "A:p000076",
+      "hospital": "A",
+      "sha256": "4b4d74c4eea2d740a3a9f131516522dcea5c528247ba6b221f7f58e93b51ab0f",
+      "hours": 36,
+      "septic": true
+    }
+  ]
+}
