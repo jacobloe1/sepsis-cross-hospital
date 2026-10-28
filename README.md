@@ -1,12 +1,12 @@
 # Cross-Hospital Generalization of a Sepsis Early-Warning Classifier
 
-CS 4824 research project comparing a partial SIRS-style rule and regularized logistic regression on the public PhysioNet/Computing in Cardiology Challenge 2019 ICU dataset. The primary experiment develops a model on Hospital A and applies the unchanged model to Hospital B. A separate pooled A+B random-split experiment supplies a comparison regime.
+Our CS 4824 capstone project compares a partial SIRS-style rule and regularized logistic regression on the public PhysioNet/Computing in Cardiology Challenge 2019 ICU dataset. The primary experiment develops a model on Hospital A and applies the unchanged model to Hospital B. A separate pooled A+B random-split experiment supplies a comparison regime.
 
 **Current evidence:** model utility deteriorates on Hospital B across three seeds. A revised missingness gate activates but does not demonstrate a utility benefit. These retrospective experiments do not establish support for clinical deployment. The revised analysis is exploratory because B was inspected before the missingness revision.
 
 ## Milestone report
 
-The **[milestone PDF](reports/milestone/milestone_report.pdf)** contains three NeurIPS-format content pages plus a references-only fourth page. [Editable source and build instructions](reports/milestone/README.md) are included. The report explains the logistic fallback, 50,000-hour cap, uncertainty, exploratory abstention revision, survey case/matrix, completion plan, and confirmed contributions.
+Here is our milestone report: **[milestone PDF](reports/milestone/milestone_report.pdf)**. [Editable source and build instructions](reports/milestone/README.md) are included. The report explains the logistic fallback, 50,000-hour cap, uncertainty, exploratory abstention revision, survey case/matrix, completion plan, and confirmed contributions.
 
 ## Recorded results
 
