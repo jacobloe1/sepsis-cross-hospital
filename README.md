@@ -28,7 +28,6 @@ SD across three seeds is descriptive variation, **not a confidence interval**. S
 - [Exploratory revision protocol](docs/revision_protocol_20261026.md)
 - [Verification record](docs/followup_verification_20261026.md)
 
-The original summary retains its historical “unverified utility” warning; the later verification record above confirms those saved utilities against the unmodified official NumPy scorer. Original outputs were not rewritten.
 
 ![Transfer and abstention across three seeds](results/priorities_20261026/transfer_and_abstention.png)
 
@@ -207,4 +206,3 @@ Initial implementation, troubleshooting, follow-up computations, and milestone d
 - Nestor et al. (2019), *Feature robustness in non-stationary health records: Caveats to deployable model performance in common clinical machine learning tasks*. [PMLR 106](https://proceedings.mlr.press/v106/nestor19a.html).
 - [Official evaluation repository](https://github.com/physionetchallenges/evaluation-2019). Its unmodified source and BSD 2-Clause license are retained under `vendor/official/`.
 
-The Challenge publication already studied cross-hospital generalization. This project is a controlled replication/diagnosis; do not claim the first cross-hospital sepsis evaluation.
