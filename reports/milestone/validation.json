@@ -1,0 +1,24 @@
+{
+  "content_pages": 3,
+  "references_only_pages": [
+    4
+  ],
+  "total_pages": 4,
+  "appendix_pages": 0,
+  "official_style_unmodified": true,
+  "overfull_boxes": false,
+  "undefined_citations_or_references": false,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "authors": [
+    "Trisha Bajpai",
+    "Basmala Metwally",
+    "Jacob Loe"
+  ],
+  "contributions_confirmed_by": "Jacob Loe in the report-preparation conversation",
+  "pdf_sha256": "ace7a19ac6e7837d8236798f22847ef76348bca39140427df33f630c48fff95a"
+}

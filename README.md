@@ -4,6 +4,10 @@ CS 4824 research project comparing a partial SIRS-style rule and regularized log
 
 **Current evidence:** model utility deteriorates on Hospital B across three seeds. A revised missingness gate activates but does not demonstrate a utility benefit. These retrospective experiments do not establish support for clinical deployment. The revised analysis is exploratory because B was inspected before the missingness revision.
 
+## Milestone report
+
+The **[milestone PDF](reports/milestone/milestone_report.pdf)** contains three NeurIPS-format content pages plus a references-only fourth page. [Editable source and build instructions](reports/milestone/README.md) are included. The report explains the logistic fallback, 50,000-hour cap, uncertainty, exploratory abstention revision, survey case/matrix, completion plan, and confirmed contributions.
+
 ## Recorded results
 
 Means and sample SD across seeds 7, 42, and 2026:
@@ -192,9 +196,9 @@ The primary recorded outputs include per-hour predictions, fitted coefficients/p
 
 ## Team and project record
 
-Team: Arshia Nalla, Trisha Bajpai, Basmala Metwally, Jacob Loe. The proposal assigns ingestion/documentation to Arshia, preprocessing/clinical baselines to Trisha, classifier/calibration to Jacob, and evaluation/abstention/reproducibility to Basmala; interpretation and writing are shared. Those are planned assignments, not independently verified completed contributions.
+Current team: **Trisha Bajpai, Basmala Metwally, and Jacob Loe**. Jacob confirmed the completed roles: Jacob handled data acquisition, ingestion/documentation, classifier/calibration work, and original baseline execution; Trisha handled preprocessing and the SIRS-style baseline; Basmala handled evaluation, abstention, and reproducibility checks. Jacob took over the reassigned ingestion/documentation work following the team change. See the [contribution record](docs/contributions.md).
 
-Jacob downloaded the data and executed the original baseline. The initial code, troubleshooting changes, and follow-up experiments were produced with AI assistance in Jacob's session. Team members should review the code/results, record their actual contributions, and follow course disclosure requirements before submission. This repository is a research artifact rather than a clinical product. No clinical review of the baseline or prospective validation has been completed.
+Initial implementation, troubleshooting, follow-up computations, and milestone drafting used AI assistance in Jacob's session. The team remains responsible for reviewing the code, interpretation, contribution wording, and final submission. Planned future tasks are distinguished from completed contributions in the [current milestone notes](docs/milestone_notes.md). This repository is a research artifact rather than a clinical product; no clinical review or prospective validation has been completed.
 
 ## References and third-party material
 

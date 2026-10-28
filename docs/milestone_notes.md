@@ -1,44 +1,42 @@
-# Milestone working notes — not a submission-ready report
+# Current milestone report record
+
+The compiled report is [reports/milestone/milestone_report.pdf](../reports/milestone/milestone_report.pdf). It uses the unmodified official NeurIPS 2026 style, with three content pages and a fourth page containing only references. Editable LaTeX and build instructions are in the same folder. This record supersedes the initial synthetic-only milestone notes; the original experimental results remain unchanged.
 
 ## Current thesis
-A classifier developed on one hospital may lose useful early-warning performance on another, so evidence for a clinician-review alert requires retained utility and calibration, controlled alert burden, and transparent coverage under missingness shift.
 
-## Progress and revisions
-Implemented a minimum viable logistic baseline and partial SIRS rule instead of starting with boosted trees. This follows the proposal's fallback, reduces computational requirements, and makes the first transfer comparison inspectable. Data processing, disjoint patient splits, separate probability calibration, frozen threshold matching, metrics, subgroup tables, paired patient bootstrap, and two missingness policies are coded. Gradient boosting, clinical review of SIRS, full-scale profiling, and real-data experiments are pending.
+A sepsis classifier may beat a simple rule yet lose utility across hospitals, so clinician-review reliance requires evidence on transfer, subgroups, calibration, and the consequences of abstention.
 
-The contribution should be described as controlled replication/diagnosis. The Challenge publication already studied cross-hospital generalization; the proposal's claim that cross-hospital work is largely absent requires a literature audit. Do not claim novelty from this implementation alone.
+## Scope and completed work
 
-## Completed evidence, failed attempts, and interpretation
-Thirteen automated tests passed. A complete run used 160 artificial stays solely to exercise both evaluation regimes and artifact generation. These numbers are NOT sepsis findings. The data-download attempt failed at DNS resolution in this execution environment. No PhysioNet cohort was trained/evaluated, and no primary hypothesis or reliance condition has been established. Independent utility passed analytical cases, but agreement with the official Python scorer still requires data and NumPy.
+The logistic model is the proposal's planned fallback instead of boosted trees. It provides an inspectable baseline within available compute; boosted trees remain unimplemented, and no result compares the model families. Preprocessing and classifier fitting use a seeded reservoir capped at **50,000 training hours**. This is not a full-hour model fit. Calibration and evaluation remain uncapped, including all 20,000 B patients.
 
-A useful engineering observation from the fixture is that abstention can suppress warnings when measurement availability decreases. This is a software behavior check, not evidence that the same effect occurs in real hospitals. Whole-cohort metrics therefore retain abstained hours as no-alert decisions.
+Completed artifacts include a causal data pipeline, disjoint patient-level development/evaluation splits, partial SIRS and regularized logistic baselines, probability calibration, threshold matching, official utility verification, 18 passing software tests, three-seed results, paired patient bootstrap summaries, subgroup/calibration diagnostics, and two plots. The repository README gives reproduction commands.
 
-## Real-results table to populate
+## Evidence and uncertainty
 
-| Evaluation | Cohort counts and prevalence | SIRS utility | Logistic utility and paired Δ CI | FPR / burden | Sensitivity / PPV | ECE and coverage |
-|---|---|---|---|---|---|---|
-| A-held-out | Pending | Pending | Pending | Pending | Pending | Pending |
-| A→B | Pending | Pending | Pending | Pending | Pending | Pending |
-| Pooled random | Pending | Pending | Pending | Pending | Pending | Pending |
+| Logistic evaluation | AUROC mean ± seed SD | Utility mean ± seed SD | Hour sensitivity |
+|---|---:|---:|---:|
+| A holdout | 0.7257 ± 0.0105 | 0.2460 ± 0.0239 | 67.3% |
+| B transfer | 0.6951 ± 0.0031 | 0.0756 ± 0.0174 | 52.9% |
+| Pooled random | 0.7424 ± 0.0045 | 0.2094 ± 0.0162 | 66.5% |
 
-Keep a paired A→B utility-improvement interval, reliability plot with bin counts, and coverage table in the eventual report. Mark the bootstrap as conditional on one fitted model; repeat training seeds separately. Do not paste synthetic metrics into this table.
+Seed SD across 7,42,2026 describes variation from changed patient splits, training samples, and SGD order. It is **not a confidence interval**. The separate 95% intervals use 1,000 paired whole-patient bootstrap draws, conditional on one fitted model/threshold, and do not include retraining uncertainty. B utility-improvement intervals versus SIRS are [0.0618,0.1129], [0.0470,0.1050], and [0.0822,0.1386]. Case mix, prevalence, and development-pool differences prevent interpreting these comparisons as a causal effect of evaluation design.
 
-## Draft class-survey case summary
-Case: Cross-hospital generalization of an ICU sepsis early-warning classifier. Intended user/action: clinician decides whether to review a patient further. Evidence: public hourly PhysioNet 2019 A/B records with supplied labels; A-only development and fixed B transfer evaluation. Comparators: partial SIRS and regularized logistic regression; boosted trees planned. Shift: hospital measurement practice, patient mix, and missingness. Outcomes: normalized Challenge utility, alert burden, sensitivity/PPV, calibration, warning time, and selective coverage. Current status: pipeline verified on artificial fixtures; real-data findings and reliance judgment pending. Lifecycle response: withhold unsupported missingness cases for clinician review rather than infer reassurance from silence; no validated deployment workflow yet.
+The first raw-missingness abstention rule never activated because its training 95th-percentile cutoff was 1.0. The revised recent-vitals rule withholds 3.54% of B hours, but does not demonstrate a utility gain. **The revision is exploratory because Hospital B had already been inspected.** Each B gate-minus-ungated utility interval includes zero. Unit-2 sensitivity deficits exceed ten percentage points in two fits; sparse higher-risk calibration bins also remain problematic. These failures prevent claiming the proposal's full limited-reliance conditions are satisfied.
 
-## Draft comparison-matrix entry
+## Survey materials
 
-| Domain / task | User / decision | Evidence and split | Models | Shift / failure | Measures | Human role / lifecycle | Supported conclusion |
-|---|---|---|---|---|---|---|---|
-| ICU early sepsis warning | Clinician prioritizes review | PhysioNet 2019; patient-level A development/A holdout/B transfer | Partial SIRS; logistic; boosted trees pending | Hospital and missingness shift; abstention may miss warnings | Utility, FPR/burden, sensitivity, PPV, calibration, coverage | Clinician diagnoses; no autonomous treatment; update requires new validation | Pending real-data evidence |
+The current [case summary and matrix entry](class_survey_case.md) also appear on content page 3 of the report. This is a controlled replication/diagnosis, not a claim to the first cross-hospital sepsis study.
 
-## Completion plan and obstacles
+## Completion plan
 
-1. Obtain original A/B archives, verify counts/hashes, inspect field availability and labels; run the official utility equivalence check. Resolve any format mismatches before analysis.
-2. Freeze protocol and run A-only plus pooled comparisons. Review convergence; repeat seeds 7,42,2026. Profile memory/runtime and vectorize if full-cohort costs are excessive. Keep sample caps identical across experiments and report them.
-3. Examine B calibration, group counts and CIs, coverage, and alert burden. Run strict-pattern and dropout stress tests. Add gradient boosting only after the baseline is sound, selecting parameters entirely within A.
-4. Obtain clinical feedback on proxy SIRS and label/alert interpretation. Audit literature before novelty claims. Document failed gates and narrow conclusions when appropriate.
-5. Draft an actual NeurIPS-format report capped at three content pages, plus references: ~0.5 page question/revisions; ~0.75 methods/split; ~1.0 results/interpretation; ~0.75 survey entry, plan, and contributions. This Markdown file is not NeurIPS formatted and must not be submitted as-is. Add the real shared code URL or project artifact link after team setup.
+1. Basmala: patient-clustered subgroup intervals and group-size review. Trisha: measurement completeness and missing-unit analysis. Deliver a subgroup/measurement table; keep power limitations explicit.
+2. Jacob: calibration near the alert threshold and sparse-bin uncertainty. Trisha/Basmala: define cooldown/single-alert comparisons and controlled vital-dropout stress tests. Seek clinical review of the partial SIRS rule and freshness assumptions; narrow claims if it is unavailable.
+3. Jacob: attempt boosted trees only if compute permits, selecting entirely on A development data. Otherwise, retain logistic regression and test cap/convergence sensitivity. Preserve current outputs and avoid best-seed or B-based threshold selection.
+4. All three: reconcile the final thesis, matrix, citations, limitations, and contribution record. B-informed revisions remain exploratory; if a new independent hospital evaluation is infeasible, retain a bounded diagnostic conclusion.
 
-## Contributions — confirmation required
-The proposal assigns Arshia Nalla ingestion/documentation; Trisha Bajpai preprocessing/clinical baselines; Jacob Loe classifier/calibration; Basmala Metwally evaluation/abstention/reproducibility; interpretation/writing to all four. These are planned responsibilities, not verified completed contributions. This initial implementation was generated with AI assistance in Jacob's session. Each member should review their assigned components, record actual changes/experiments, and replace this section with an accurate final account, following course disclosure rules. The original October16 target precedes this October23 implementation and needs a revised team schedule.
+## Confirmed current team and contributions
+
+Jacob confirmed the completed roles: **Jacob Loe** handled data acquisition, ingestion/documentation, classifier/calibration work, and original baseline execution; **Trisha Bajpai** handled preprocessing and the SIRS-style baseline; **Basmala Metwally** handled evaluation, abstention, and reproducibility checks. The team now has these three members, with Jacob taking over the reassigned ingestion/documentation work.
+
+Implementation, troubleshooting, follow-up computations, and report drafting used AI assistance. The team remains responsible for review and final submission. See [contributions.md](contributions.md) for the current attribution record.

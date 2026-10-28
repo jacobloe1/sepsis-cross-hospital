@@ -18,3 +18,12 @@ backups/
 # Fresh local reproductions; the recorded baseline/follow-up remain tracked.
 results/reproduced_*/
 results/local_smoke/
+
+# Local LaTeX build products and page-inspection scratch files
+reports/milestone/*.aux
+reports/milestone/*.log
+reports/milestone/*.out
+reports/milestone/*.fls
+reports/milestone/*.fdb_latexmk
+reports/milestone/build_console.txt
+reports/milestone/page*.txt
