@@ -34,7 +34,7 @@ The partial SIRS rule requires two criteria: HR$>90$; Temp$<36$ or $>38$; Resp$>
 \begin{table}[h]
 \centering\small
 \input{metrics_table.tex}
-\caption{Means across seeds 7, 42, and 2026; sensitivity is hourly. SD describes variation across fits/splits, \emph{not} a confidence interval. Gated AUROC uses unchanged latent risks on all hours. All B patients and their 761,995 hours are evaluated in every seed.}
+\caption{Means across seeds 7, 42, and 2026; sensitivity is hourly. \emph{Coverage} is the share of hours on which the model gives a prediction rather than abstaining. SD describes variation across fits/splits, \emph{not} a confidence interval. Gated AUROC uses unchanged latent risks on all hours. All B patients and their 761,995 hours are evaluated in every seed.}
 \label{tab:results}
 \end{table}
 
@@ -44,12 +44,12 @@ Utility decreases from A holdout to B in every seed, even though AUROC changes l
 Our utility implementation agrees with the unmodified official NumPy scorer \citep{scorer} for observed, ideal-window, and no-action patient utilities and cohort normalization; maximum patient discrepancies are below $10^{-13}$. Warning timing is conditional on detection in the inferred onset $[-12,0]$h window (onset = first positive row + 6); it is not prospective lead-time evidence.
 
 \paragraph{Abstention failure and exploratory revision.}
-The initial rule withheld hours whose raw missingness exceeded A-training's 95th percentile. That percentile was 1.0, so the strict inequality could never trigger. We retained this failure. \textbf{The revised analysis is exploratory because B had already been inspected.} It uses seven vital signs (HR, O2Sat, Temp, SBP, MAP, DBP, Resp) in the current and previous five hours. It withholds when none is recent, or their missing fraction exceeds the training 95th percentile among hours with at least one recent vital. Rule parameters are fixed before revised evaluation and learned without B in the A-only regime.
+The abstention \emph{gate} withholds a prediction when recent data look too sparse to trust. The initial rule withheld hours whose raw missingness exceeded A-training's 95th percentile. That percentile was 1.0, so the strict inequality could never trigger. We retained this failure. \textbf{The revised analysis is exploratory because B had already been inspected.} It uses seven vital signs (HR, O2Sat, Temp, SBP, MAP, DBP, Resp) in the current and previous five hours. It withholds when none is recent, or their missing fraction exceeds the training 95th percentile among hours with at least one recent vital. Rule parameters are fixed before revised evaluation and learned without B in the A-only regime.
 
 The revision activates but does not repair transfer: B coverage is 96.46\% in each seed, and utility changes versus ungated predictions are $-.00168$, $-.00069$, and $-.00217$. All three paired B intervals include zero: neither a benefit nor a definitive adverse B effect is established. Withheld hours remain in sensitivity/utility denominators as no alerts. Some A/pooled intervals exclude zero on the negative side. This freshness screen does not establish support for unusual laboratory patterns or a safe clinical fallback.
 
 \paragraph{Calibration, subgroups, and current conclusion.}
-Low overall ten-bin ECE hides sparse higher-risk failures: in original seed42 B predictions, the .30--.40 bin averaged .340 predicted risk but .100 positive labels (521 hours). Unit-2 sensitivity is 7.96, 13.71, and 16.19 percentage points below overall B sensitivity; two fits exceed the proposal's ten-point limit on point estimates. Adequacy requires at least 30 septic and 30 never-septic patients, but subgroup intervals/power remain unresolved. B precision is 3.1--3.5\%, with mean 23.0 alert hours per 100 hours versus SIRS's 25.5. Label-negative alerts can include useful early warnings, so these are not direct clinical false-alarm estimates. Evidence supports a transfer-performance concern and an advantage over the partial rule, \emph{not} the proposal's full limited-reliance claim.
+Low overall ten-bin expected calibration error (ECE) hides sparse higher-risk failures: in original seed-42 B predictions, the .30--.40 bin averaged .340 predicted risk but .100 positive labels (521 hours). Unit-2 (patients flagged by the data's \texttt{Unit2} ICU-unit indicator) sensitivity is 7.96, 13.71, and 16.19 percentage points below overall B sensitivity; two fits exceed the proposal's ten-point limit on point estimates. Adequacy requires at least 30 septic and 30 never-septic patients, but subgroup intervals/power remain unresolved. B precision is 3.1--3.5\%, with mean 23.0 alert hours per 100 hours versus SIRS's 25.5. Label-negative alerts can include useful early warnings, so these are not direct clinical false-alarm estimates. Evidence supports a transfer-performance concern and an advantage over the partial rule, \emph{not} the proposal's full limited-reliance claim.
 
 \newpage
 \section{Draft class-survey case and comparison entry}
@@ -88,17 +88,16 @@ Before the final report, we will proceed in the following order:
 
 \clearpage
 \begin{thebibliography}{9}
-\bibitem[Reyna et~al.(2020)]{reyna2020}
-M.~A. Reyna, C.~S. Josef, R.~Jeter, S.~P. Shashikumar, M.~B. Westover, S.~Nemati, G.~D. Clifford, and A.~Sharma.
-Early prediction of sepsis from clinical data: The PhysioNet/Computing in Cardiology Challenge 2019.
-\emph{Critical Care Medicine}, 48(2):210--217, 2020.
-\url{https://doi.org/10.1097/CCM.0000000000004145}.
-
 \bibitem[Nestor et~al.(2019)]{nestor2019}
 B.~Nestor, M.~B.~A. McDermott, W.~Boag, G.~Berner, T.~Naumann, M.~C. Hughes, A.~Goldenberg, and M.~Ghassemi.
 Feature robustness in non-stationary health records: Caveats to deployable model performance in common clinical machine learning tasks.
 \emph{Proceedings of Machine Learning Research}, 106:381--405, 2019.
 \url{https://proceedings.mlr.press/v106/nestor19a.html}.
+
+\bibitem[PhysioNet(2019)]{scorer}
+PhysioNet. Evaluation code for the PhysioNet/CinC Challenge 2019.
+\url{https://github.com/physionetchallenges/evaluation-2019}, 2019.
+The unmodified scorer and source hashes used here are retained in the project repository.
 
 \bibitem[Reyna et~al.(2019)]{data2019}
 M.~Reyna et~al.
@@ -106,9 +105,10 @@ Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardio
 PhysioNet, 2019.
 \url{https://doi.org/10.13026/v64v-d857}.
 
-\bibitem[PhysioNet(2019)]{scorer}
-PhysioNet. Evaluation code for the PhysioNet/CinC Challenge 2019.
-\url{https://github.com/physionetchallenges/evaluation-2019}, 2019.
-The unmodified scorer and source hashes used here are retained in the project repository.
+\bibitem[Reyna et~al.(2020)]{reyna2020}
+M.~A. Reyna, C.~S. Josef, R.~Jeter, S.~P. Shashikumar, M.~B. Westover, S.~Nemati, G.~D. Clifford, and A.~Sharma.
+Early prediction of sepsis from clinical data: The PhysioNet/Computing in Cardiology Challenge 2019.
+\emph{Critical Care Medicine}, 48(2):210--217, 2020.
+\url{https://doi.org/10.1097/CCM.0000000000004145}.
 \end{thebibliography}
 \end{document}
